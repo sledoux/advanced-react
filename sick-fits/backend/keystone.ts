@@ -9,12 +9,12 @@ import {
 // import { OrderItem } from './schemas/OrderItem';
 // import { Order } from './schemas/Order';
 // import { CartItem } from './schemas/CartItem';
-// import { ProductImage } from './schemas/ProductImage';
+import { ProductImage } from './schemas/ProductImage';
 import { Product } from './schemas/Product';
 import { User } from './schemas/User';
 import 'dotenv/config';
 import { insertSeedData } from './seed-data';
-import { sendPasswordResetEmail } from './lib/mail';
+// import { sendPasswordResetEmail } from './lib/mail';
 // import { extendGraphqlSchema } from './mutations';
 
 // function check(name: string) { }
@@ -66,7 +66,7 @@ export default withAuth(
       // Schema items go in here
       User,
       Product,
-      //   ProductImage,
+      ProductImage,
       //   CartItem,
       //   OrderItem,
       //   Order,
